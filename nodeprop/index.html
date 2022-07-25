@@ -15,16 +15,45 @@
     <meta name="author" content="Letícia Farias">
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
-
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
-
+    <!--jquery-->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <!--font google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <header class="cabecalho">
+     <a href="index.html"><h1 class="logo">NodeProp - Especializada em Soluções Digitais</h1></a> 
+     <button class="btn-menu"><i class="fa fa-bars fa-lg "></i></button>
+     <nav class="menu">
+        <a class="btn-close">X</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Clientes</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+     </nav>
+    </header>
+    <script>
+        /*clicar no botão e aparecer o menu*/
+        $(".btn-menu").click(function (){
+            $(".menu").show();
+        });
+        /*clicar no botão e fechar o menu*/
+        $(".btn-close").click(function (){
+            $(".menu").hide();
+        });
+    </script>
     
 </body>
 </html>
